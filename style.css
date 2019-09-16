@@ -15,17 +15,14 @@ p{
 }
 a{
     font-size: 18px;
-    color: #c12258;
+    color: #c12258; 
     text-decoration: underline;
     
 }
-tr :focus{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #c12258;
-    color: #fab9cf;
-
+tr:hover{
+    background-color:#fab9cf;
 }
+
 table{
     *border-collapse: collapse; 
     border: 2px solid black;
@@ -72,6 +69,8 @@ tbody tr td, th{
 }
 
 tr:nth-child(even) {background:#dddddd;
+}
+tr:nth-child(even):hover {background: #fab9cf;
 }
 footer{
 position: fixed;
