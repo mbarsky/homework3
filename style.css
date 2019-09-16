@@ -3,10 +3,10 @@ body {
     background-image: url("images/pidgeon-background.jpg");
     background-repeat: no-repeat;
     background-color: #dddddd;
+    padding: 20px;
 }
 h1{
     size: 2em;
-    line-height: 1.5em;
     color: #c12258;
 }
 p{
@@ -27,28 +27,62 @@ tr :focus{
 
 }
 table{
-    border-collapse: collapse; 
+    *border-collapse: collapse; 
     border: 2px solid black;
+    border-radius: 10px; 
+    border-spacing: 0;
+}
+thead tr th:first-child {
+    border-radius: 9px 0 0 0;
 }
 
+thead tr th:last-child {
+    border-radius: 0 9px 0 0;
+}
+
+th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+#final td:last-child{
+    border-radius: 0px 0px 9px 0;
+}
+#final th:first-child{
+    border-radius: 0px 0 0 9px;
+}
+.rowhead{
+    height: 1.5em;
+}
     
 thead{
     background:#7e0830;
 }
 .colhead{
     width: 150px;
-    padding: 10px;
+    height: 24px;
     color: white;
+    background-color: #7e0830;
     text-align: center;
     text-transform: uppercase;
 
 }
-tbody tr td{
+tbody tr td, th{
     text-align: center;
-}
-
-tr{
+    height: 1.5em;
     border-bottom: 2px solid black;
 }
+
 tr:nth-child(even) {background:#dddddd;
 }
+footer{
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color:black;
+  color: white;
+  text-align: center;
+
+    
+}
+
